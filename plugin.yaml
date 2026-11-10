@@ -1,0 +1,32 @@
+name: autom
+version: 1.0.0
+description: "Live Google Search results for the built-in web_search tool, through the Autom SERP API."
+author: Autom
+license: MIT
+kind: backend
+requires_hermes: ">=0.21.6"
+provides_web_providers:
+  - autom
+provides_tools: []
+provides_hooks: []
+provides_middleware: []
+requires_env:
+  - name: AUTOM_API_KEY
+    description: Autom API key
+    url: https://app.autom.dev
+    secret: true
+config_schema:
+  api_key:
+    type: secret
+    env: AUTOM_API_KEY
+    label: Autom API key
+  country:
+    type: str
+    default: us
+    label: Country
+    description: 2-letter country code the Google results come from, for example us or de.
+  language:
+    type: str
+    default: ""
+    label: Language
+    description: Optional interface language of the results, for example en or fr.
