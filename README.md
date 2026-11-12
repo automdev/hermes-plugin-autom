@@ -103,6 +103,16 @@ The backend calls Google Search and returns the organic results (title, link, sn
 | `country` | `us` | 2-letter country code the Google results come from, for example `fr` or `de`. |
 | `language` | (Google's default) | Interface language, for example `en` or `fr`. |
 
+Set it in the plugin's settings form (Plugins tab of the Hermes desktop app), or in `~/.hermes/config.yaml`:
+
+```yaml
+plugins:
+  entries:
+    autom:
+      settings:
+        country: fr
+```
+
 The backend is search only, so keep an extract backend for `web_extract`. The tools above work with or without this setting.
 
 ## Choosing country, language and location
