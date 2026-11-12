@@ -1,13 +1,30 @@
 name: autom
-version: 1.0.0
-description: "Live Google Search results for the built-in web_search tool, through the Autom SERP API."
+version: 1.1.0
+description: "Search engine results for Hermes: Google Search, News, Images, Videos, Shopping, Maps and Autocomplete, plus Bing, Brave, DuckDuckGo and Yahoo, through the Autom SERP API. Also a web_search backend."
 author: Autom
 license: MIT
 kind: backend
 requires_hermes: ">=0.21.6"
 provides_web_providers:
   - autom
-provides_tools: []
+provides_tools:
+  - autom_google_search
+  - autom_google_search_light
+  - autom_google_news
+  - autom_google_images
+  - autom_google_videos
+  - autom_google_shopping
+  - autom_google_maps
+  - autom_google_autocomplete
+  - autom_search
+  - autom_bing_search
+  - autom_brave_search
+  - autom_brave_images
+  - autom_brave_videos
+  - autom_duckduckgo_search
+  - autom_yahoo_search
+  - autom_google_locations
+  - autom_usage
 provides_hooks: []
 provides_middleware: []
 requires_env:
